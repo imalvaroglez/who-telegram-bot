@@ -12,7 +12,7 @@ def send_message(chat_id):
 
 def handle_message(update, context):
     # Replace YOUR_KEYWORD with the word you want to listen for
-    invalid_names = ['Aldo', 'Carlos', 'Arreguin', 'Manzano']
+    invalid_names = ['Aldo', 'Carlos', 'Arreguin', 'Manzano', 'Alvaro']
 
     if (True if update.message.text in invalid_names else False):
         send_message(update.message.chat_id)
